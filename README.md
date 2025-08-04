@@ -1,4 +1,6 @@
 🏦 UPI Transaction Pattern Analysis Project
+
+
 📊 Overview
 This project analyzes synthetic UPI transaction data across users and merchants to uncover insights into digital payment behavior in India. It covers end-to-end data analysis using:
 
