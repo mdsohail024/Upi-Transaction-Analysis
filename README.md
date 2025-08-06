@@ -1,59 +1,66 @@
-🏦 UPI Transaction Pattern Analysis Project
+# 💸 UPI Transaction Trends & Consumer Behavior Analysis
 
+## 📊 Overview
 
-📊 Overview
-This project analyzes synthetic UPI transaction data across users and merchants to uncover insights into digital payment behavior in India. It covers end-to-end data analysis using:
+This project explores the patterns, trends, and insights from a synthetic UPI (Unified Payments Interface) transaction dataset. It aims to uncover key behaviors of users, merchants, and digital payment apps in India's fast-evolving cashless economy. The analysis is performed using **Python**, **SQL**, and various data visualization tools.
 
-🐍 Python (Pandas, Matplotlib, Seaborn)
+---
 
-🧮 SQL (Data joining, views, aggregations)
+## 🔍 Objectives
 
+- Analyze transaction patterns by time, day, and hour.
+- Identify top-performing states, merchants, and categories.
+- Visualize UPI app usage trends (PhonePe, GPay, Paytm, etc.).
+- Understand consumer behavior by age, gender, and location.
+- Discover peak transaction periods.
+- Explore most used payment modes and transaction types.
 
-📁 Dataset Structure
-1. upi_users.csv
-Contains user demographics and device/app info.
+---
 
-Key Columns: User_ID, Gender, Age, City, State, Device_Type, UPI_App
+## 🗃️ Dataset
 
-2. upi_merchants.csv
-Contains merchant details and business category.
+This project is based on a synthetic dataset with the following tables:
 
-Key Columns: Merchant_ID, Merchant_Name, Category, State
+1. `upi_transactions.csv` – Core transaction details
+2. `upi_users.csv` – User demographics and device/app info
+3. `upi_merchants.csv` – Merchant details and categories
 
-3. upi_transactions.csv
-Records each transaction.
+All three datasets were joined using SQL and then used for further analysis in Python.
 
-Key Columns: Transaction_ID, User_ID, Merchant_ID, Amount, Payment_Mode, Transaction_Status, Transaction_Type, Transaction_Date
+---
 
-🔍 Key KPIs & Analysis
-✅ Transaction Success Rate
+## 📌 Key KPIs & Visualizations
 
-📆 Peak Transaction Hours / Weekdays
+| KPI / Insight                             | Chart Type          |
+|------------------------------------------|---------------------|
+| UPI Transaction Status (Success/Fail)    | Donut Chart         |
+| Transactions by Gender                   | Count Plot          |
+| Top States by Transaction Volume         | Bar Chart           |
+| Most Active Weekdays                     | Bar Chart           |
+| Peak Transaction Hours                   | Line Plot           |
+| Age Group Analysis                       | Box/Histogram       |
+| Amount by Merchant Categories            | Horizontal Bar      |
+| Top 10 Merchants by Spend                | Bar Chart           |
+| UPI App Usage Share                      | Pie/Donut Chart     |
+| Most Used Payment Modes                  | Bar Chart           |
 
-📍 Top 5 States by Transaction Volume and Amount
+---
 
-💸 Spend Pattern by Age Group
+## 🛠️ Tools & Technologies
 
-🛍️ Top 10 Merchants & Categories by Spend
+- **Python**: Data analysis and plotting
+- **Pandas, NumPy**: Data cleaning and manipulation
+- **Matplotlib, Seaborn**: Visualization
+- **SQL (MySQL)**: Data joining and filtering
+- **Jupyter Notebook**: Exploratory data analysis
 
-🧾 Most Used UPI Apps (PhonePe, GPay, etc.)
+## 📈 Sample Insights
 
-🧾 Payment Modes Preference (UPI, QR, etc.)
+- 💼 **PhonePe** was the most used UPI app, followed by **GPay**.
+- 🕒 Transactions peaked between **12 PM and 3 PM**.
+- 🛒 Merchants in **E-commerce** and **Food Delivery** received the highest transaction amounts.
+- 🧑‍🤝‍🧑 Male users had a slightly higher transaction volume than female users.
 
-📊 Gender-wise Transaction Distribution
+## 🙌 Acknowledgement
 
-📌 Visualizations
-📌 Bar Charts, Line Plots, Countplots
-
-🍩 Donut Charts (Status-wise breakdown)
-
-📍 Heatmaps (Time vs Status)
-
-📉 Lollipop Charts, Pie Charts
-
-🧠 Correlation and Aggregation Visuals
-
-🛠️ Tools Used
-Tool	Usage
-Python	Data cleaning, feature engineering, visualizations
-SQL	Creating views, joins, aggregations
+This project was created as part of a **data analyst portfolio** to showcase real-world analysis skills using Python and SQL
